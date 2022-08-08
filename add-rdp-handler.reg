@@ -1,0 +1,23 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\WTHandler.URLHandler-rdp.1]
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\WTHandler.URLHandler-rdp.1\shell]
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\WTHandler.URLHandler-rdp.1\shell\open]
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\WTHandler.URLHandler-rdp.1\shell\open\command]
+@="\"powershell\" \"rdp-protocol-handler.ps1\" \"%1\""
+
+[HKEY_CURRENT_USER\SOFTWARE\WTHandler\Capabilities]
+"ApplicationDescription"="PowerShell RDP Protocol Handler"
+"ApplicationName"="PowerShell RDP Protocol Handler"
+
+[HKEY_CURRENT_USER\SOFTWARE\WTHandler\Capabilities\UrlAssociations]
+"rdp"="WTHandler.URLHandler-rdp.1"
+
+[HKEY_CURRENT_USER\SOFTWARE\RegisteredApplications]
+"PowerShell RDP Protocol Handler"="Software\\WTHandler\\Capabilities"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ApplicationAssociationToasts]
+"WTHandler.URLHandler.1_rdp"=dword:00000000
